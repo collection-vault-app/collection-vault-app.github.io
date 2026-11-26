@@ -1,7 +1,7 @@
 // Collection Vault offline shell: public, pinned files only. No inventory or tokens.
-const CACHE='collection-vault-public-shell-0.9.9.8.1';
+const CACHE='collection-vault-public-shell-0.9.9.8.2';
 const FILES={
-  "encrypted.html": "3f87ad79ae8c4f5af94104db43c6fc1ba87bc648ab2f92d93251f16a35d48607",
+  "encrypted.html": "74d1e6abcf4020f653bc752fccaad267e0ec9158f389efa7ebceb655ea72b9d8",
   "manifest.webmanifest": "64673252d749169d5c2a63701205bce07c7085e0648a0d680f8731e5d39b5288",
   "icon-192.png": "f33bf3d14085ead0ef1a8e6b3c6b4599fb69b02cebd72c109ec0dcc193341901",
   "icon-512.png": "c42b56d0f59eb84b7012bd0d133494db5ea3e93bd0f20e596d12a17132f624d3",
