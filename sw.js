@@ -1,10 +1,11 @@
 // Collection Vault offline shell: public, pinned files only. No inventory or tokens.
-const CACHE='collection-vault-public-shell-0.9.9.7';
+const CACHE='collection-vault-public-shell-0.9.9.8';
 const FILES={
-  "encrypted.html": "a601b80d029146d6730e1d95bbd8da11c2441fa7408792f98298a0fc5000816d",
+  "encrypted.html": "8db45223fd00a021bb03b4f8de8c865a1ef41da0a7a7d9a4a06f187868f2d9e4",
   "manifest.webmanifest": "64673252d749169d5c2a63701205bce07c7085e0648a0d680f8731e5d39b5288",
   "icon-192.png": "f33bf3d14085ead0ef1a8e6b3c6b4599fb69b02cebd72c109ec0dcc193341901",
-  "icon-512.png": "c42b56d0f59eb84b7012bd0d133494db5ea3e93bd0f20e596d12a17132f624d3"
+  "icon-512.png": "c42b56d0f59eb84b7012bd0d133494db5ea3e93bd0f20e596d12a17132f624d3",
+  "index.html": "a39008a6a731df71d9dd0a707236b2e59a9d703acf458b13496bdd5e80c7b990"
 };
 const scope=new URL(self.registration.scope);
 const URLS=new Map(Object.entries(FILES).map(([name,hash])=>[new URL(name,scope).href,hash]));
