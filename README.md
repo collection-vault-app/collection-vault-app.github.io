@@ -1,6 +1,6 @@
-# Collection Vault v0.9.9.8.6 — bundled reference library
+# Collection Vault v0.9.9.8.7 — bundled reference library
 
-Upload all eight files at the repository root, replacing existing files. Do not upload the original archive. Wait for GitHub Pages deployment, close/reopen online, unlock the vault and choose Collection > Browse game catalog. The bundled library loads on first visit. To use offline, lock the vault, prepare offline access in settings and verify airplane-mode operation. Existing encrypted DB is unchanged. Do not delete site data.
+Upload all nine files at the repository root, replacing existing files. Do not upload the original archive. Wait for GitHub Pages deployment, close/reopen online, unlock the vault and choose Collection > Browse game catalog. The bundled library loads on first visit. To use offline, lock the vault, prepare offline access in settings and verify airplane-mode operation. Existing encrypted DB is unchanged. Do not delete site data.
 
 ## Reference data
 Data: Title Screen (https://titlescreen.org), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), build 2026.10.09. Modified: selected supported platforms, filtered release types, joined missing developer/genre/player fields from works, normalized and bounded text, serialized as compact JSON. Includes 106,108 regional records across 29 platforms, plus existing starter entries. The source is not physical-only; serials are not UPCs; no source gameplay descriptions or film catalog. Missing data remains blank. PS5, Xbox Series X, Switch 2 and PSP UMD Video remain starter-only.
@@ -57,3 +57,8 @@ No source ZIP or ROM files are distributed. The reference JSON SHA-256 is verifi
 
 ## Verification
 Full reference file verified and loaded through the app loader in Node with simulated fetch/DOM; modified data rejected. Search tested for Pokémon Gold, Madden NFL 09, Mario Kart 7 and Zelda. Script syntax and all pinned SHA-256 hashes checked. Browser navigation blocked by environment; encrypted save, live GitHub deployment, iPhone memory use and offline behavior require device testing.
+
+## Barcode reference (new)
+Data: PLAYBACK Archive (https://playback-archive.com/data-sources), derived open barcode subset from Nudger/Open4Good (https://nudger.fr/), under the Open Database License 1.0 (https://opendatacommons.org/licenses/odbl/1-0/). Modified by validating GS1 checksums, preserving original columns and converting CSV to separate JSON. The separate barcode-reference.json database is provided under ODbL 1.0; it is not relicensed as Title Screen data. Source URLs retained in the JSON. The original uploaded CSV contained 998 rows; 998 accepted, 0 rejected. No Redump data included. Runtime matching enriches candidates with unanimous title-level facts only; region and exact edition must be confirmed. No inventory format changes. Scan > take/import photo > Find game from last scanned barcode > select result > Save selected copies. For unknown codes use title search. Source CSV does not cover most older systems. Device behavior remains untested.
+
+Loader tests: full 106,108 release records and 998 barcode candidates loaded using actual loader functions with simulated DOM/fetch in Node. Modified barcode data rejected. UPC/EAN normalization, exact match and no-match tested. 706 barcode records matched normalized title/platform candidates; unanimous genre available for 661, publisher for 693, developer for 700. Browser/iPhone camera and encrypted save not tested in this build.

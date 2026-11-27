@@ -1,12 +1,13 @@
 // Collection Vault offline shell: public, pinned files only. No inventory or tokens.
-const CACHE='collection-vault-public-shell-0.9.9.8.6';
+const CACHE='collection-vault-public-shell-0.9.9.8.7';
 const FILES={
-  "encrypted.html": "7ec0280d5d4406f4db8669a3ee626449d925ba16f7ecf768641bfbf5305c8abf",
+  "encrypted.html": "fa0391fbef732ff773fa1f682b27375a2c003df60edc68ea53aceda93c326760",
   "manifest.webmanifest": "64673252d749169d5c2a63701205bce07c7085e0648a0d680f8731e5d39b5288",
   "icon-192.png": "f33bf3d14085ead0ef1a8e6b3c6b4599fb69b02cebd72c109ec0dcc193341901",
   "icon-512.png": "c42b56d0f59eb84b7012bd0d133494db5ea3e93bd0f20e596d12a17132f624d3",
   "index.html": "a39008a6a731df71d9dd0a707236b2e59a9d703acf458b13496bdd5e80c7b990",
-  "game-reference.json": "595d84750af02ad5004ffb730005b57a5593d933af746d95c5098020bbeed14c"
+  "game-reference.json": "595d84750af02ad5004ffb730005b57a5593d933af746d95c5098020bbeed14c",
+  "barcode-reference.json": "0bc61f5eb5d258a9b3f13d7a80ee9a38318f99f49006cc492d5b4051d7815ffb"
 };
 const scope=new URL(self.registration.scope);
 const URLS=new Map(Object.entries(FILES).map(([name,hash])=>[new URL(name,scope).href,hash]));
